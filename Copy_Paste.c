@@ -22,14 +22,14 @@ int main()
    {
         //printf("fd1=%d\n",fd1);
 	perror(str1);
-	exit(1);                                                                                                                                            perror(str1);                                                                              exit(1);
+	exit(1);                                                                                                                                           
    }
    fd2=open(str2, O_CREAT || O_TRUNC || O_WRONLY || O_RDONLY);                                                                                       
    if(fd2<0)
    {
-        //printf("fd2=%d\n",fd1);
+        //printf("fd2=%d\n",fd1)
 	perror(str2);
-	exit(1);                                                                                                                                               exit(1);
+	exit(1);             
    } 
   y=lseek(fd1,0,SEEK_END); 
   lseek(fd1,0,SEEK_SET);   
